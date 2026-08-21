@@ -72,6 +72,8 @@ class WeatherProvider extends ChangeNotifier {
       weather = WeatherModel(
         city: cityData['name'],
         country: cityData['country'],
+        latitude: latitude,
+        longitude: longitude,
         temperature: current['temperature_2m'],
         condition: condition,
         icon: icon,
